@@ -1,6 +1,13 @@
-print "Hello, World!"
 
 name = raw_input("Enter your name:- ")
-age = raw_input("How old are you? :- ")
 
-print "Hello, " + name + "! You look great for " + age
+print "Hello, " + name.capitalize() + "."
+
+game_decision = raw_input("Would you like to play a game? (y/n)")
+
+
+if game_decision.capitalize() == "Y":
+    print "You die in a horrible global thermonuclear war!  Oops."
+
+else:
+        print "Good choice, the only way to win is not to play"
